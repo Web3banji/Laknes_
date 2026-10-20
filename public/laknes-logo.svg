@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Background subtle radial glow -->
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0f141b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Top vertical blade gradient -->
+    <linearGradient id="top-blade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7be4ff" />
+      <stop offset="30%" stop-color="#28cdff" />
+      <stop offset="70%" stop-color="#0099ff" />
+      <stop offset="100%" stop-color="#0047cc" />
+    </linearGradient>
+
+    <!-- Bottom horizontal wing gradient -->
+    <linearGradient id="bottom-wing" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#023eb8" />
+      <stop offset="25%" stop-color="#0066ff" />
+      <stop offset="70%" stop-color="#24c8ff" />
+      <stop offset="100%" stop-color="#80ebff" />
+    </linearGradient>
+
+    <!-- Shadow crease gradient between petals -->
+    <linearGradient id="crease-shadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001844" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0055d4" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Edge highlight glow -->
+    <linearGradient id="highlight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow Behind Logo -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg-glow)" />
+
+  <!-- Vertical Folded Stem (The upper "L" branch) -->
+  <path
+    d="M 264 128
+       L 196 168
+       C 176 182 173 204 173 234
+       L 173 348
+       C 173 355 174 358 174 358
+       C 177 348 184 326 200 300
+       C 222 264 263 236 263 180
+       L 264 128 Z"
+    fill="url(#top-blade)"
+  />
+
+  <!-- High-precision curved ribbon rendering for LAKNES "L" -->
+  <g id="laknes-monogram">
+    <!-- Base / Horizontal Wing (bottom right petal) -->
+    <path
+      d="M 174 358
+         C 192 316 230 286 270 290
+         C 310 294 340 292 370 292
+         L 326 348
+         C 304 356 268 358 240 358
+         L 174 358 Z"
+      fill="url(#bottom-wing)"
+    />
+
+    <!-- Main Upper Fin with sleek aerodynamic curve -->
+    <path
+      d="M 264 128
+         L 194 170
+         C 175 183 173 208 173 246
+         L 173 358
+         C 175 352 188 322 214 294
+         C 245 260 264 220 264 180
+         L 264 128 Z"
+      fill="url(#top-blade)"
+    />
+
+    <!-- Aerodynamic Horizontal Swept Wing -->
+    <path
+      d="M 173 358
+         C 196 322 240 290 280 290
+         L 370 290
+         L 302 358
+         C 260 358 210 358 173 358 Z"
+      fill="url(#bottom-wing)"
+    />
+
+    <!-- Overlap / Depth Shadow Crease -->
+    <path
+      d="M 173 358
+         C 188 330 220 304 256 295
+         C 220 310 192 334 173 358 Z"
+      fill="url(#crease-shadow)"
+    />
+
+    <!-- Subtle Edge Sheen -->
+    <path
+      d="M 264 128
+         L 263 135
+         C 263 182 244 222 214 258
+         C 216 254 226 238 234 220
+         C 250 186 264 150 264 128 Z"
+      fill="url(#highlight)"
+      opacity="0.4"
+    />
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "name": "LAKNES - Elysium Ecosystem Hub",
+  "description": "Architecture and core platform systems for discovering and engaging with projects in the Elysium ecosystem.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
